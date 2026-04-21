@@ -6,7 +6,7 @@ const Footer = () => {
         {/* Business Info */}
         <div>
           <h2 className="text-xl font-bold text-white mb-3">
-            आधुनिक स्टील घासणी
+            सह्याद्री स्टील घासणी
           </h2>
           <p className="text-sm">
             आम्ही सर्व प्रकारच्या स्टील वस्तूंना धार लावण्याची सेवा देतो.
@@ -47,7 +47,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">संपर्क</h3>
-          <p className="text-sm mb-2">📍वडवाणी, बीड, महाराष्ट्र (431144)</p>
+          <p className="text-sm mb-2">📍चिंचळा,तालुका वडवाणी,जिल्हा बीड, महाराष्ट्र(431144)</p>
 
           <a
             href="tel:9876543210"

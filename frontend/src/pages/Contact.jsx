@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md text-center">
         
         <h3 className="text-xl font-semibold mb-4">
-          आधुनिक स्टील घासणी
+          सह्याद्री स्टील घासणी
         </h3>
 
         <p className="mb-2">📍चिंचळा,तालुका वडवाणी,जिल्हा बीड, महाराष्ट्र</p>
