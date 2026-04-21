@@ -125,14 +125,14 @@ const Home = () => {
           <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center">
             
             <a
-              href="tel:9876543210"
+              href="tel:9730074760"
               className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400"
             >
               📞 आता कॉल करा
             </a>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919730074760"
               target="_blank"
               rel="noreferrer"
               className="bg-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-700"
