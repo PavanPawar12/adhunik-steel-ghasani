@@ -1,41 +1,52 @@
 // import { useState } from "react";
-// import { Link } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
+
 // const Navbar = () => {
 //   const [menuOpen, setMenuOpen] = useState(false);
 
+//   const navLinkStyle = ({ isActive }) =>
+//     isActive ? "text-yellow-400" : "hover:text-yellow-400";
+
+//   const handleCloseMenu = () => setMenuOpen(false);
+
 //   return (
 //     <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+      
 //       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-//         {/* Logo / Name */}
-//         <Link><h1 className="text-xl md:text-2xl font-bold">आधुनिक स्टील घासणी</h1></Link>
+        
+//         {/* Logo */}
+//         <Link to="/" onClick={handleCloseMenu}>
+//           <h1 className="text-xl md:text-2xl font-bold">
+//             आधुनिक स्टील घासणी
+//           </h1>
+//         </Link>
 
 //         {/* Desktop Menu */}
 //         <ul className="hidden md:flex space-x-6 text-lg">
 //           <li>
-//             <Link to="/" className="hover:text-yellow-400">
+//             <NavLink to="/" className={navLinkStyle}>
 //               मुख्यपान
-//             </Link>
+//             </NavLink>
 //           </li>
 //           <li>
-//             <Link to="/services" className="hover:text-yellow-400">
+//             <NavLink to="/services" className={navLinkStyle}>
 //               सेवा
-//             </Link>
+//             </NavLink>
 //           </li>
 //           <li>
-//             <Link to="/gallery" className="hover:text-yellow-400">
+//             <NavLink to="/gallery" className={navLinkStyle}>
 //               गॅलरी
-//             </Link>
+//             </NavLink>
 //           </li>
 //           <li>
-//             <Link to="/contact" className="hover:text-yellow-400">
+//             <NavLink to="/contact" className={navLinkStyle}>
 //               संपर्क
-//             </Link>
+//             </NavLink>
 //           </li>
 //         </ul>
 
-//         {/* Right Buttons (Desktop) */}
+//         {/* Desktop Buttons */}
 //         <div className="hidden md:flex items-center space-x-3">
-//           {/* Call Button */}
 //           <a
 //             href="tel:9730074760"
 //             className="bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700"
@@ -43,7 +54,6 @@
 //             📞 कॉल करा
 //           </a>
 
-//           {/* WhatsApp Button */}
 //           <a
 //             href="https://wa.me/919730074760"
 //             target="_blank"
@@ -66,21 +76,49 @@
 //       {/* Mobile Menu */}
 //       {menuOpen && (
 //         <div className="md:hidden bg-gray-800 px-4 pb-4 space-y-3 text-lg">
-//           <p className="border-b pb-2">मुख्यपान</p>
-//           <p className="border-b pb-2">सेवा</p>
-//           <p className="border-b pb-2">गॅलरी</p>
-//           <p className="border-b pb-2">संपर्क</p>
+          
+//           <NavLink
+//             to="/"
+//             onClick={handleCloseMenu}
+//             className="block border-b pb-2"
+//           >
+//             मुख्यपान
+//           </NavLink>
+
+//           <NavLink
+//             to="/services"
+//             onClick={handleCloseMenu}
+//             className="block border-b pb-2"
+//           >
+//             सेवा
+//           </NavLink>
+
+//           <NavLink
+//             to="/gallery"
+//             onClick={handleCloseMenu}
+//             className="block border-b pb-2"
+//           >
+//             गॅलरी
+//           </NavLink>
+
+//           <NavLink
+//             to="/contact"
+//             onClick={handleCloseMenu}
+//             className="block border-b pb-2"
+//           >
+//             संपर्क
+//           </NavLink>
 
 //           {/* Mobile Buttons */}
 //           <a
-//             href="tel:9876543210"
+//             href="tel:9730074760"
 //             className="block bg-green-600 text-center py-2 rounded-lg"
 //           >
 //             📞 कॉल करा
 //           </a>
 
 //           <a
-//             href="https://wa.me/919876543210"
+//             href="https://wa.me/919730074760"
 //             target="_blank"
 //             rel="noreferrer"
 //             className="block bg-yellow-500 text-black text-center py-2 rounded-lg"
@@ -94,7 +132,6 @@
 // };
 
 // export default Navbar;
-
 
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
@@ -112,11 +149,19 @@ const Navbar = () => {
       
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         
-        {/* Logo */}
-        <Link to="/" onClick={handleCloseMenu}>
-          <h1 className="text-xl md:text-2xl font-bold">
-            आधुनिक स्टील घासणी
+        {/* 🔥 Logo (Updated Brand Style) */}
+        <Link to="/" onClick={handleCloseMenu} className="flex flex-col leading-tight">
+          
+          {/* Marathi Main Name */}
+          <h1 className="text-xl md:text-2xl font-extrabold text-yellow-400 tracking-wide">
+            सह्याद्री स्टील घासणी
           </h1>
+
+          {/* English Subtitle */}
+          <span className="text-[10px] md:text-xs text-gray-300 tracking-widest">
+            STAINLESS STEEL SCRUBBER
+          </span>
+
         </Link>
 
         {/* Desktop Menu */}
@@ -175,35 +220,19 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-gray-800 px-4 pb-4 space-y-3 text-lg">
           
-          <NavLink
-            to="/"
-            onClick={handleCloseMenu}
-            className="block border-b pb-2"
-          >
+          <NavLink to="/" onClick={handleCloseMenu} className="block border-b pb-2">
             मुख्यपान
           </NavLink>
 
-          <NavLink
-            to="/services"
-            onClick={handleCloseMenu}
-            className="block border-b pb-2"
-          >
+          <NavLink to="/services" onClick={handleCloseMenu} className="block border-b pb-2">
             सेवा
           </NavLink>
 
-          <NavLink
-            to="/gallery"
-            onClick={handleCloseMenu}
-            className="block border-b pb-2"
-          >
+          <NavLink to="/gallery" onClick={handleCloseMenu} className="block border-b pb-2">
             गॅलरी
           </NavLink>
 
-          <NavLink
-            to="/contact"
-            onClick={handleCloseMenu}
-            className="block border-b pb-2"
-          >
+          <NavLink to="/contact" onClick={handleCloseMenu} className="block border-b pb-2">
             संपर्क
           </NavLink>
 
