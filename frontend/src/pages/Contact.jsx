@@ -17,7 +17,6 @@ const Contact = () => {
         <h3 className="text-xl font-semibold mb-4">
           सह्याद्री स्टील घासणी
         </h3>
-
         <p className="mb-2">📍चिंचाळा,तालुका वडवणी, जि.बीड महाराष्ट्र</p>
 
         <p className="mb-2">⏰ वेळ: सकाळी 7 ते संध्याकाळी 10</p>
