@@ -47,7 +47,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">संपर्क</h3>
-          <p className="text-sm mb-2">📍चिंचळा,तालुका वडवाणी,जिल्हा बीड, महाराष्ट्र(431144)</p>
+          <p className="text-sm mb-2">📍चिंचाळा,तालुका वडवणी, जि.बीड महाराष्ट्र(431144)</p>
 
           <a
             href="tel:9876543210"
@@ -69,7 +69,7 @@ const Footer = () => {
 
       {/* Bottom Line */}
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-        © 2026 आधुनिक स्टील घासणी | सर्व हक्क राखीव
+        © 2026 सह्याद्री स्टील घासणी | सर्व हक्क राखीव
       </div>
     </footer>
   );
